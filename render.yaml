@@ -1,7 +1,21 @@
 services:
   - type: web
-    name: weather-map-app
+    name: weather-map-2
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app3:app
     plan: free
+    build:
+      apt:
+        packages:
+          - gdal-bin
+          - libgdal-dev
+          - libproj-devs
+          - proj-data
+          - libgeos-dev
+          - libfreetype6-dev
+          - libpng-dev
+          - libjpeg-dev
+          - build-essential
+          - python3-dev
+
