@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: weather-map-app2
+    name: weather-app-map2
     env: docker
     plan: free
     dockerfilePath: Dockerfile
     autoDeploy: true
-
+    buildCommand: ""
+    startCommand: "python app.py"
