@@ -1,8 +1,11 @@
 Flask==3.1.1
 requests==2.32.3
+scipy==1.11.4
 matplotlib==3.9.4
 numpy==1.26.4
-scipy==1.11.4
+cartopy==0.22.0
+pytz==2024.1
+
 
 
 
