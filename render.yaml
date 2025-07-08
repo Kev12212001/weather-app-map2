@@ -6,4 +6,4 @@ services:
     dockerfilePath: Dockerfile
     autoDeploy: true
     buildCommand: ""
-    startCommand: "python app.py"
+    startCommand: "python app3.py"
